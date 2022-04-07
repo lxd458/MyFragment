@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="match_parent"
+	android:layout_height="55dp"
+
+	>
+<!--	-->
+	<LinearLayout
+		android:id="@+id/wx"
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_gravity="center"
+		android:layout_weight="1"
+		android:orientation="vertical"
+		android:gravity="center"
+		>
+
+		<ImageView
+			android:layout_width="32dp"
+			android:layout_height="32dp"
+			android:id="@+id/iv_wx"
+              android:background="@drawable/tab_weixin"
+			/>
+         <TextView
+			 android:id="@+id/tv_wx"
+			 android:text="微信"
+			 android:layout_width="32dp"
+			 android:layout_height="wrap_content"
+			 />
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/lxr"
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_gravity="center"
+		android:layout_weight="1"
+		android:orientation="vertical"
+		android:gravity="center"
+		>
+
+		<ImageView
+			android:layout_width="32dp"
+			android:layout_height="32dp"
+			android:id="@+id/iv_lxr"
+			android:background="@drawable/tab_lianxiren"
+			/>
+		<TextView
+			android:id="@+id/tv_lxr"
+			android:text="通讯录"
+			android:layout_width="32dp"
+			android:layout_height="wrap_content"
+			/>
+	</LinearLayout>
+<!--//////////////////////-->
+	<LinearLayout
+		android:id="@+id/find"
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_gravity="center"
+		android:layout_weight="1"
+		android:orientation="vertical"
+		android:gravity="center"
+		>
+		<ImageView
+			android:layout_width="32dp"
+			android:layout_height="32dp"
+			android:id="@+id/iv_find"
+			android:background="@drawable/tab_find"
+			/>
+		<TextView
+			android:id="@+id/tv_find"
+			android:text="发现"
+			android:layout_width="32dp"
+			android:layout_height="wrap_content"
+			/>
+	</LinearLayout>
+<!--	//////////////////////////////-->
+	<LinearLayout
+		android:id="@+id/my"
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_gravity="center"
+		android:layout_weight="1"
+		android:orientation="vertical"
+		android:gravity="center"
+		>
+		<ImageView
+			android:layout_width="32dp"
+			android:layout_height="32dp"
+			android:id="@+id/iv_my"
+			android:background="@drawable/tab_my"
+			/>
+		<TextView
+			android:id="@+id/tv_my"
+			android:text="我的"
+			android:layout_width="32dp"
+			android:layout_height="wrap_content"
+			/>
+	</LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+异常：
+java.lang.NullPointerException: Attempt to invoke virtual method
+'void android.widget.ImageView.setSelected(boolean)' on a null object reference
+办法：

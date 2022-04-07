@@ -1,0 +1,9 @@
+1.定义viewpager
+2.构建adapter
+3.创建adater类，继承RecylerView.Adapter<ViewPagerAdapter.ViewPagerHolder>
+重写三个方法，进行创建返回view，绑定，页面个数
+4.再此类中，再构建一个ViewPagerHolder类，继承RecyclerView.ViewHolder
+实现其方法
+
+ViewPager2:
+implementation 'androidx.viewpager2:viewpager2:1.0.0'

@@ -1,0 +1,14 @@
+RunTimeException:
+com.example.addmanage.MainActivity@3e50cd5b must implement OnFragmentInteractionListener
+
+解决办法：
+1.去掉BlankFragment1的else语句
+ @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        if (context instanceof OnFragmentInteractionListener) {
+            mListener = (OnFragmentInteractionListener) context;
+        } /////【去掉else语句】
+    }
+
+2.去掉ItemFragment的else语句

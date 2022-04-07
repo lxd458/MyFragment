@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+<!--  ViewPager2切屏滑动效果  -->
+   <androidx.viewpager2.widget.ViewPager2
+       android:text="Hello"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_weight="1"
+       android:id="@+id/vp"
+       />
+<!--   需要把bottm.xml加进来,才能实现滑动效果-->
+    <include layout="@layout/bottom"/>
+
+</LinearLayout>
