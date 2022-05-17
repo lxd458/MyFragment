@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	package="com.example.activity2">
+<!--	引入网络配置-->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<!--  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> -->
+
 
 	<application
 		android:allowBackup="true"
@@ -9,28 +13,41 @@
 		android:roundIcon="@mipmap/ic_launcher_round"
 		android:supportsRtl="true"
 		android:theme="@style/AppTheme">
-		<activity android:name=".Main2Activity">
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
-
-				<category android:name="android.intent.category.LAUNCHER" />
-			</intent-filter>
-		</activity>
+<!--		使用第二个-->
+<!--		<activity android:name=".Main2Activity">-->
+<!--		<intent-filter>-->
+<!--			<action android:name="android.intent.action.MAIN" />-->
+<!--			<category android:name="android.intent.category.LAUNCHER" />-->
+<!--		</intent-filter>-->
+<!--	   </activity>-->
+<!--		第一个活动页-->
 		<activity android:name=".MainActivity">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
-
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
-		</activity> <!-- 引入服务类的组件应用 -->
+		</activity>
+		<!-- 引入服务类组件应用: 用在活动页面一 -->
 		<service android:name=".MyService" />
-         <!-- 引入广播的组件 -->
+
+         <!-- 引入广播组件:静态注册 // MyReceiver类 -->
 		<receiver android:name=".MyReceiver">
-			<!-- 静态注册广播接收者 -->
 			<intent-filter>
 				<action android:name="com.lxd.test_flag" />
+<!--				<action android:name="android.intent.action.BOOT_COMPLETED" />-->
+<!--				<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />-->
 			</intent-filter>
 		</receiver>
+
+<!--无用的-->
+<!--		<service android:enabled="true" a-->
+<!--			ndroid:name="com.keyli.service.NetworkStateService" > -->
+<!--			<intent-filter> -->
+<!--				<action android:name="android.net.conn.CONNECTIVITY_CHANGE" /> -->
+<!--			</intent-filter> -->
+<!--		</service>-->
+
+
 	</application>
 
 </manifest>

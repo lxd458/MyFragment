@@ -1,2 +1,2 @@
-include ':app', ':myapp', ':addmanage', ':viewpage', ':wechatpage', ':activity1', ':activity2'
+include ':app', ':myapp', ':addmanage', ':viewpage', ':wechatpage', ':activity1', ':activity2', ':bugly', ':amap_gd', ':demo_service'
 rootProject.name='MyFragment'

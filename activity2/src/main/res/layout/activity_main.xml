@@ -7,6 +7,8 @@
 	tools:context=".MainActivity"
 	android:orientation="vertical"
 	>
+<!--	里面分别是两个：LinearLayout 标签-->
+<!--	 1.通过两个按钮事件，完成[服务的开启和关闭]-->
 	<LinearLayout
 		android:orientation="vertical"
 		android:layout_width="match_parent"
@@ -29,7 +31,7 @@
 		 android:onClick="stopService"
 		 />
 	</LinearLayout>
-<!--//////////////////////////////-->
+<!--///////2.通过两个按钮事件，完成服务的绑定和解绑///////////////////////-->
 	<LinearLayout
 		android:orientation="vertical"
 		android:layout_width="match_parent"

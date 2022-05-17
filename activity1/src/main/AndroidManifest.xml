@@ -13,12 +13,13 @@
 <!--			默认第一个活动窗口-->
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
-
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>
 <!--		实现第二个活动窗口-->
 		<activity android:name=".MainActivity2"/>
+
+
 	</application>
 
 </manifest>

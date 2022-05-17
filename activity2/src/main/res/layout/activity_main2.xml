@@ -8,16 +8,16 @@
 	android:orientation="vertical"
 	>
 	<TextView
-		android:text="静态注册"
+		android:text="静态或动态注册"
 		android:textSize="20dp"
-		android:background="@color/colorAccent"
+		android:background="#ff0000"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"/>
 	<Button
 		android:text="点我发送广播"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:onClick="sendBoardCast"
+		android:onClick="send"
 		/>
 
 </LinearLayout>
